@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비교과 통합시스템</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 60px;
+        }
+        .carousel-item img {
+            height: 400px;
+            object-fit: cover;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- 네비게이션 바 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">비교과 통합시스템</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">홈</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">기능 소개</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#students">학생 포털</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">문의</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 홈 섹션 -->
+    <section id="home" class="container py-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>비교과 활동을 통합 관리하세요</h2>
+                <p>비교과 통합시스템은 학생들이 비교과 활동을 보다 효율적으로 관리하고, 성과를 분석하는 데 도움을 줍니다.</p>
+                <a href="#features" class="btn btn-primary">기능 살펴보기</a>
+            </div>
+            <div class="col-md-6">
+                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://via.placeholder.com/500x400" class="d-block w-100" alt="소개 이미지 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://via.placeholder.com/500x400" class="d-block w-100" alt="소개 이미지 2">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 기능 소개 섹션 -->
+    <section id="features" class="container py-5">
+        <h2 class="text-center">주요 기능</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="기능1">
+                    <div class="card-body">
+                        <h5 class="card-title">프로그램 관리</h5>
+                        <p class="card-text">비교과 프로그램을 쉽게 등록하고 관리할 수 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="기능2">
+                    <div class="card-body">
+                        <h5 class="card-title">학생 역량 분석</h5>
+                        <p class="card-text">학생의 참여 이력을 기반으로 성과를 분석하고 피드백을 제공합니다.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="기능3">
+                    <div class="card-body">
+                        <h5 class="card-title">학생 포트폴리오</h5>
+                        <p class="card-text">학생은 자신의 비교과 활동을 포트폴리오로 관리할 수 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 학생 포털 섹션 -->
+    <section id="students" class="container py-5">
+        <h2 class="text-center">학생 포털</h2>
+        <p>학생들은 쉽게 로그인하고 비교과 프로그램에 참여할 수 있습니다.</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+            <a href="#" class="btn btn-success btn-lg">학생 로그인</a>
+            <a href="#" class="btn btn-secondary btn-lg">학생 가입</a>
+        </div>
+    </section>
+
+    <!-- 문의 섹션 -->
+    <section id="contact" class="container py-5">
+        <h2 class="text-center">문의하기</h2>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">이름</label>
+                <input type="text" class="form-control" id="name" placeholder="이름을 입력하세요">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">이메일</label>
+                <input type="email" class="form-control" id="email" placeholder="이메일을 입력하세요">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">문의 내용</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="문의 사항을 작성하세요"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">보내기</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-4">
+        <p>&copy; 2024 비교과 통합시스템. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
